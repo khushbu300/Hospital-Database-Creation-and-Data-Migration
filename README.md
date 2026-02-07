@@ -1,24 +1,6 @@
 # Hospital-Database-Creation-and-Data-Migration
 
-Hospital Database Creation & Data Migration (MySQL)
 
-This project focuses on designing a relational hospital database and migrating data from a single Excel file into a structured MySQL database.
-The goal is to convert a large, denormalized dataset into normalized tables while enforcing business rules, data validation, and basic role-based access logic.
-
-The project is based on a real-world styled dataset containing hospital operational data such as doctors, patients, appointments, prescriptions, lab reports and billing information.
-
-Project Overview
-
-Hospitals often maintain operational data in spreadsheets, which becomes difficult to manage as data grows.
-In this project, a single Excel/CSV file is used as the source and migrated into a properly designed relational database.
-
-The implementation covers:
-
-Database schema design
-
-Data migration from Excel to MySQL
-
-Data integrity and validation rules
 
 Business rule automation using triggers
 
