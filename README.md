@@ -1,5 +1,5 @@
-## 🏥 Hospital Database Creation & Data Migration
-📌 Project Overview
+# 🏥 Hospital Database Creation & Data Migration
+## 📌 Project Overview
 
 This project focuses on designing and implementing a structured relational database system for a hospital that was previously managing its data using Excel files.
 
@@ -15,16 +15,16 @@ Implement role-based access control
 
 Enable department-level revenue reporting
 
-🚨 Problems Identified in the Existing System
-1. No Unique Identifiers
+## 🚨 Problems Identified in the Existing System
+### 1. No Unique Identifiers
 
 There were no guaranteed unique IDs for patients, doctors, departments, or appointments.
 
-2. Disconnected Relationships
+### 2. Disconnected Relationships
 
 Appointments existed without enforceable links to valid patients or doctors.
 
-3. Invalid and Ambiguous Data
+### 3. Invalid and Ambiguous Data
 
 Examples:
 
@@ -34,20 +34,20 @@ Appointment statuses like "On Hold"
 
 Inconsistent date formats
 
-4. Double Bookings & Past Appointments
+### 4. Double Bookings & Past Appointments
 
 Doctors were occasionally double-booked, and some appointments were scheduled in the past.
 
-5. Unrestricted Access to Patient Data
+### 5. Unrestricted Access to Patient Data
 
 All doctors could see all patient records, regardless of role or department.
 
-6. No Department-Level Revenue Reporting
+### 6. No Department-Level Revenue Reporting
 
 There was no structured way to generate monthly revenue summaries.
 
-🛠 Solutions Implemented
-✔ 1. Structured Relational Schema
+## 🛠 Solutions Implemented
+### ✔ 1. Structured Relational Schema
 
 Designed normalized tables:
 
@@ -77,7 +77,7 @@ Default timestamps
 
 This ensured referential integrity and eliminated data redundancy.
 
-✔ 2. Data Validation & Standardization
+### ✔ 2. Data Validation & Standardization
 
 Enforced valid gender values (M, F, O)
 
@@ -87,7 +87,7 @@ Converted inconsistent date formats using STR_TO_DATE
 
 Cleaned and migrated Excel-based hospital data into structured tables
 
-✔ 3. Trigger for Appointment Validation
+### ✔ 3. Trigger for Appointment Validation
 
 Created a BEFORE INSERT trigger on the Appointments table to:
 
@@ -97,7 +97,7 @@ Prevent double booking of doctors at the same time
 
 This ensures operational reliability at the database level.
 
-✔ 4. Role-Based Access Control (RBAC)
+### ✔ 4. Role-Based Access Control (RBAC)
 
 Implemented a stored procedure that:
 
@@ -109,7 +109,7 @@ Restricts junior doctors to viewing only their assigned patients
 
 This simulates controlled access to sensitive patient data.
 
-✔ 5. Monthly Revenue Reporting
+### ✔ 5. Monthly Revenue Reporting
 
 Developed a stored procedure to:
 
@@ -121,7 +121,7 @@ Generate department-wise monthly revenue reports
 
 This converts transactional hospital data into actionable business insights.
 
-🧰 Technologies Used
+## 🧰 Technologies Used
 
 MySQL
 
@@ -135,7 +135,7 @@ Data Migration & Cleaning
 
 Multi-table Joins and Aggregations
 
-📚 Key Learnings
+## 📚 Key Learnings
 
 Designing normalized relational schemas
 
