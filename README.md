@@ -1,4 +1,10 @@
 # 🏥 Hospital Database Creation & Data Migration
+
+## 📊 Project Summary
+
+Designed and implemented a normalized hospital database system by migrating unstructured Excel data into MySQL, improving data integrity, reducing redundancy, and enabling efficient reporting and analysis.
+
+
 ## 📌 Project Overview
 
 This project focuses on designing and implementing a structured relational database system for a hospital that was previously managing its data using Excel files.
