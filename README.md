@@ -21,6 +21,21 @@ Implement role-based access control
 
 Enable department-level revenue reporting
 
+## 🚀 Business Impact
+
+- Improved data accuracy by enforcing constraints and validation rules
+- Eliminated data redundancy through normalization
+- Prevented double bookings and invalid entries using triggers
+- Enabled secure data access with role-based control (RBAC)
+- Automated monthly revenue reporting for better decision-making
+
+## 🔍 Key Insights
+
+- Structured databases significantly improve data reliability compared to Excel systems
+- Enforcing constraints at DB level prevents critical operational errors
+- Role-based access improves data security in sensitive domains like healthcare
+- SQL procedures can transform raw data into meaningful business reports
+
 ## 🚨 Problems Identified in the Existing System
 ### 1. No Unique Identifiers
 
