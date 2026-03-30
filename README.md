@@ -1,25 +1,14 @@
-# 🏥 Hospital Database Creation & Data Migration
+🏥 Hospital Database Creation & Data Migration  
+📌 SQL | MySQL | Data Cleaning | Database Design
 
 ## 📊 Project Summary
 
-Designed and implemented a normalized hospital database system by migrating unstructured Excel data into MySQL, improving data integrity, reducing redundancy, and enabling efficient reporting and analysis.
+Designed and implemented a normalized relational database system by migrating unstructured Excel data into MySQL, improving data integrity, reducing redundancy, and enabling efficient reporting and analysis.
 
 
 ## 📌 Project Overview
 
-This project focuses on designing and implementing a structured relational database system for a hospital that was previously managing its data using Excel files.
-
-As hospital operations scaled, the Excel-based system became inefficient, inconsistent, and prone to errors. The objective of this project was to:
-
-Design a normalized relational database
-
-Migrate existing Excel data into MySQL
-
-Enforce data integrity and business rules
-
-Implement role-based access control
-
-Enable department-level revenue reporting
+This project transforms an inefficient Excel-based hospital system into a structured MySQL database, improving data consistency, integrity, and reporting capabilities.
 
 ## 🚀 Business Impact
 
@@ -141,6 +130,15 @@ Aggregate billing data
 Generate department-wise monthly revenue reports
 
 This converts transactional hospital data into actionable business insights.
+
+
+## ⚙️ Key Technical Highlights
+
+- Designed normalized schema (up to 3NF)
+- Implemented constraints (PK, FK, CHECK)
+- Used triggers for real-time validation
+- Developed stored procedures for reporting
+- Performed data cleaning and transformation
 
 ## 🧰 Technologies Used
 
