@@ -135,7 +135,7 @@ INSERT INTO PATIENTS (PatientID, NAME, DATEOFBIRTH, GENDER, PHONE)
 SELECT 
   `Patients.PatientID`,
   `Patients.Name`,
-  STR_TO_DATE(`Patients.DateOfBirth`, '%d-%m-%Y'),  -- Correct format
+  STR_TO_DATE(`Patients.DateOfBirth`, '%d-%m-%Y'), 
   `Patients.Gender`,
   `Patients.Phone`
 FROM HOSPITAL_DATA
@@ -167,7 +167,7 @@ select * from appointments;
 SELECT CONCAT('SELECT',GROUP_CONCAT(CONCAT('`' , COLUMN_NAME,'`' )),'FROM HOSPITAL_DATA') FROM 
 INFORMATION_SCHEMA.COLUMNS
 WHERE 
-  TABLE_SCHEMA = 'p1'  -- replace with your actual DB
+  TABLE_SCHEMA = 'p1'  
   AND TABLE_NAME = 'hospital_data'
   AND COLUMN_NAME LIKE 'PRESCRIPTIONS.%';
 
@@ -183,7 +183,7 @@ SELECT * FROM PRESCRIPTIONS;
 SELECT CONCAT('SELECT',GROUP_CONCAT(CONCAT('`' , COLUMN_NAME,'`' )),'FROM HOSPITAL_DATA') FROM 
 INFORMATION_SCHEMA.COLUMNS
 WHERE 
-  TABLE_SCHEMA = 'p1'  -- replace with your actual DB
+  TABLE_SCHEMA = 'p1'  
   AND TABLE_NAME = 'hospital_data'
   AND COLUMN_NAME LIKE 'LABREPORTS.%';
   
@@ -199,7 +199,7 @@ SELECT * FROM LABREPORTS;
 SELECT CONCAT('SELECT',GROUP_CONCAT(CONCAT('`' , COLUMN_NAME,'`' )),'FROM HOSPITAL_DATA') FROM 
 INFORMATION_SCHEMA.COLUMNS
 WHERE 
-  TABLE_SCHEMA = 'p1'  -- replace with your actual DB
+  TABLE_SCHEMA = 'p1'  
   AND TABLE_NAME = 'hospital_data'
   AND COLUMN_NAME LIKE 'BILLS.%';
   
